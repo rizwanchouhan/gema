@@ -28,22 +28,26 @@ The overall pipeline learns a structured representation that is mapped to a cont
 ```bash
 git clone https://github.com/rizwanchouhan/gema.git
 cd gema
+```
 
 # Create a Conda Environment
 
 ```bash
 conda create -n gema python=3.8 -y
 conda activate gema
+```
 
 # Install PyTorch
 
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+```
 
 # CPU-only Installation
 
 ```bash
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
+```
 
 # ⚙️ Requirements
 
