@@ -16,6 +16,35 @@ The proposed framework consists of three main components:
 
 The overall pipeline learns a structured representation that is mapped to a continuous 3D feature field and rendered into a view-consistent human avatar.
 
+# System Requirements
+
+- Ubuntu 20.04 / 22.04 (recommended)
+- Python 3.8+
+- CUDA 11.8 or CUDA 12.1
+- NVIDIA GPU with at least 12 GB memory (RTX A6000 48 GB used in our experiments)
+
+# Clone the Repository
+
+```bash
+git clone https://github.com/rizwanchouhan/gema.git
+cd gema
+
+# Create a Conda Environment
+
+```bash
+conda create -n gema python=3.8 -y
+conda activate gema
+
+# Install PyTorch
+
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+
+# CPU-only Installation
+
+```bash
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
 # ⚙️ Requirements
 
 Install the required libraries:
